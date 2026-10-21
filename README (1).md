@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-A beginner-friendly market-risk analysis of an equal-weighted portfolio of **WTI crude oil, gold and the IEF Treasury bond ETF** (1/3 each, USD 1,000,000, rebalanced daily to fixed weights), plus a short fixed-income section on the Treasury yield curve.
+A  market-risk analysis of an equal-weighted portfolio of **WTI crude oil, gold and the IEF Treasury bond ETF** (1/3 each, USD 1,000,000, rebalanced daily to fixed weights), plus a short fixed-income section on the Treasury yield curve.
 
 > **Question it answers:** "How much could this portfolio lose in a bad day, how do we know that number is reliable, and what happens in a crash?"
 
@@ -41,14 +41,13 @@ pip install pandas numpy matplotlib seaborn
 
 ## 4. How to Run
 
-1. Put the five CSV files in `data/` (rename `gold_1.csv` and `wti_1.csv` to `gold.csv` and `wti.csv` if needed; do not mix them with older files of the same name from other projects).
-2. Open the notebook and choose **Run All**.
-3. All settings (weights, confidence levels, window, simulations, stress windows, shock scenarios) are in one cell near the top.
-4. The last code cell runs 7 sanity checks, including a look-ahead test that changes one day's return and confirms no earlier VaR cutoff moves.
+1. Open the notebook and choose **Run All**.
+2. All settings (weights, confidence levels, window, simulations, stress windows, shock scenarios) are in one cell near the top.
+3. The last code cell runs 7 sanity checks, including a look-ahead test that changes one day's return and confirms no earlier VaR cutoff moves.
 
 ## 5. Results Snapshot
 
-Data through October 2026. Re-run the notebook to reproduce, and do not quote these without checking.
+Data through October 2026. 
 
 **1-day loss estimates on USD 1,000,000**
 
